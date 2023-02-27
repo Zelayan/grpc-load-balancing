@@ -1,4 +1,4 @@
-module grpc-load-balancing
+module github.com/Zelayan/grpc-load-balancing
 
 go 1.19
 
