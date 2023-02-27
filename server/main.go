@@ -4,8 +4,8 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	"github.com/Zelayan/grpc-load-balancing/pb"
 	"google.golang.org/grpc"
-	"grpc-load-balancing/pb"
 	"net"
 )
 
@@ -15,7 +15,6 @@ type greeterServer struct {
 }
 
 func (g greeterServer) SayHello(ctx context.Context, request *pb.HelloRequest) (*pb.HelloReply, error) {
-	//TODO implement me
 	return &pb.HelloReply{Message: g.addr}, nil
 }
 
